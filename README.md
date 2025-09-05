@@ -13,7 +13,19 @@ A Laravel web app to search for top restaurants in any city using **OpenStreetMa
 - Free hosting on Render  
 
 ---
+ ❌ Why Not Google Maps API?
+We intentionally **did not use Google Maps API** because:  
+- Google Maps API requires a **valid billing account**, even for limited free usage.  
+- Free quota is very restrictive, and costs increase quickly.  
+- This project is meant to be **100% free and open-source**.  
 
+---
+Instead, we use **OpenStreetMap (OSM)**:  
+- ✅ Completely free & open-source  
+- ✅ No billing or credit card required  
+- ✅ Provides geocoding (Nominatim) and restaurant search (Overpass API)  
+- ✅ Lightweight and easy to integrate with Laravel  
+----
 ## 🛠️ Tech Stack
 - **Backend**: Laravel 10 (PHP 8+)  
 - **Frontend**: Blade + Bootstrap 5  
